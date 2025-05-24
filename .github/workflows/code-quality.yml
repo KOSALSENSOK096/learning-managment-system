@@ -1,0 +1,68 @@
+name: 🔍 Code Quality
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality:
+    name: 🛠️ Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: 🐘 Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          tools: composer:v2, php-cs-fixer, phpstan
+
+      - name: 📦 Install Dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: 🎨 Check Code Style
+        run: |
+          composer require --dev friendsofphp/php-cs-fixer
+          vendor/bin/php-cs-fixer fix --dry-run --diff
+
+      - name: 🔍 Static Analysis
+        run: |
+          composer require --dev phpstan/phpstan
+          vendor/bin/phpstan analyse app tests
+
+      - name: 🧪 Run Tests
+        run: vendor/bin/phpunit
+
+  security:
+    name: 🔒 Security Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: 🔍 Security Check
+        uses: symfonycorp/security-checker-action@v4
+
+      - name: 🔒 Dependency Review
+        uses: actions/dependency-review-action@v3
+        with:
+          fail-on-severity: moderate
+
+  lint:
+    name: ✨ Lint Code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: 📝 Super-Linter
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_PHP: true
+          VALIDATE_JAVASCRIPT: true
+          VALIDATE_CSS: true
+          VALIDATE_JSON: true
+          VALIDATE_MARKDOWN: true 

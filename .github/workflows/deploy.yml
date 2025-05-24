@@ -1,0 +1,75 @@
+name: 🚀 Deploy
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: 🎉 Deploy to Production
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🐘 Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, pdo_mysql
+          coverage: none
+
+      - name: 📦 Install Dependencies
+        run: composer install --prefer-dist --no-interaction --no-dev
+
+      - name: 🔨 Build Assets
+        run: |
+          npm install
+          npm run build
+
+      - name: 🔑 Generate key
+        run: php artisan key:generate
+
+      - name: 🗃️ Cache Config
+        run: |
+          php artisan config:cache
+          php artisan route:cache
+          php artisan view:cache
+
+      - name: 🚀 Deploy to Server
+        uses: easingthemes/ssh-deploy@v4.1.8
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rltgoDzvO"
+          SOURCE: "."
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_PATH }}
+          EXCLUDE: "/.git/, /node_modules/, /vendor/, .env, .env.example"
+
+      - name: 🔄 Run Migrations
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ${{ secrets.REMOTE_PATH }}
+            php artisan migrate --force
+            php artisan optimize
+            php artisan cache:clear
+
+      - name: 📢 Notify on Success
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: deployments
+          SLACK_COLOR: '#36a64f'
+          SLACK_ICON: https://github.com/KOSALSENSOK096.png?size=48
+          SLACK_MESSAGE: '🎉 Successfully deployed to production!'
+          SLACK_TITLE: Deployment Status
+          SLACK_USERNAME: GitHub Actions 
+ 
