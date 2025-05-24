@@ -1,0 +1,52 @@
+version: 2
+updates:
+  # 📦 PHP/Composer Dependencies
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "📦 dependencies"
+      - "🤖 dependabot"
+    commit-message:
+      prefix: "⬆️ composer"
+      include: "scope"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "KOSALSENSOK096"
+    assignees:
+      - "KOSALSENSOK096"
+
+  # 🎨 NPM Dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "📦 dependencies"
+      - "🤖 dependabot"
+    commit-message:
+      prefix: "⬆️ npm"
+      include: "scope"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "KOSALSENSOK096"
+    assignees:
+      - "KOSALSENSOK096"
+
+  # 👷 GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "👷 CI/CD"
+      - "🤖 dependabot"
+    commit-message:
+      prefix: "⬆️ actions"
+      include: "scope"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "KOSALSENSOK096"
+    assignees:
+      - "KOSALSENSOK096" 
