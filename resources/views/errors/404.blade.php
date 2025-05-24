@@ -168,6 +168,85 @@
             50% { opacity: 0.5; }
             100% { transform: translate(100vw, -100vh) rotate(360deg); opacity: 0; }
         }
+
+        /* New cool animations */
+        .neon-text {
+            text-shadow: 0 0 5px #4F46E5,
+                        0 0 10px #4F46E5,
+                        0 0 20px #4F46E5,
+                        0 0 40px #4F46E5;
+            animation: neonPulse 2s infinite;
+        }
+
+        @keyframes neonPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .cool-icon {
+            font-size: 2rem;
+            background: linear-gradient(45deg, #4F46E5, #818CF8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: iconFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes iconFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.1); }
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .tech-badge:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            color: #4F46E5;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-5px) rotate(360deg);
+            background: #4F46E5;
+            color: white;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin: 1rem 0;
+        }
     </style>
 </head>
 <body class="flex items-center justify-center px-4">
@@ -208,9 +287,29 @@
 
     <div class="error-container text-center">
         <div class="mb-8">
-            <h1 class="number-404 font-bold mb-4">404</h1>
+            <h1 class="number-404 font-bold mb-4 neon-text">404</h1>
             <h2 class="text-4xl font-semibold text-gray-800 mb-4">Page Not Found</h2>
             <p class="text-xl text-gray-600 mb-8">The page you're looking for seems to have vanished in time...</p>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="tech-stack">
+            <span class="tech-badge">
+                <i class="fab fa-laravel cool-icon"></i>
+                Laravel
+            </span>
+            <span class="tech-badge">
+                <i class="fab fa-vuejs cool-icon"></i>
+                Vue.js
+            </span>
+            <span class="tech-badge">
+                <i class="fab fa-node-js cool-icon"></i>
+                Node.js
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-database cool-icon"></i>
+                MySQL
+            </span>
         </div>
 
         <div class="space-y-6">
@@ -256,10 +355,26 @@
                 </div>
             </div>
 
-            <!-- Support Section -->
+            <!-- Enhanced Support Section -->
             <div class="mt-12 p-6 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Support Our Work</h3>
-                <div class="flex justify-center items-center gap-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Connect With Us</h3>
+                
+                <div class="social-icons justify-center">
+                    <a href="https://github.com/KOSALSENSOK096" class="social-icon" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@SokCodeing" class="social-icon" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://t.me/kosalsensok06" class="social-icon" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="mailto:kosalsensok065@gmail.com" class="social-icon" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div class="flex justify-center items-center gap-6 mt-6">
                     <a href="https://www.buymeacoffee.com/kosalsensok" target="_blank" 
                        class="btn bg-[#FFDD00] text-gray-900 px-6 py-2 rounded-lg flex items-center">
                         <i class="fas fa-coffee mr-2"></i>
@@ -268,7 +383,7 @@
                     <a href="https://t.me/kosalsensok06" target="_blank"
                        class="btn bg-[#2AABEE] text-white px-6 py-2 rounded-lg flex items-center">
                         <i class="fab fa-telegram mr-2"></i>
-                        Join Telegram
+                        Join Community
                     </a>
                 </div>
             </div>
@@ -321,6 +436,30 @@
         }
 
         setInterval(createParticle, 1000);
+
+        // Add cool icon animations
+        document.querySelectorAll('.cool-icon').forEach(icon => {
+            icon.addEventListener('mouseover', () => {
+                icon.style.transform = 'scale(1.2) rotate(10deg)';
+            });
+            icon.addEventListener('mouseout', () => {
+                icon.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+
+        // Add random colors to tech badges
+        document.querySelectorAll('.tech-badge').forEach(badge => {
+            const colors = ['#4F46E5', '#EC4899', '#8B5CF6', '#10B981', '#F59E0B'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            badge.addEventListener('mouseover', () => {
+                badge.style.borderColor = randomColor;
+                badge.style.boxShadow = `0 5px 15px ${randomColor}66`;
+            });
+            badge.addEventListener('mouseout', () => {
+                badge.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+                badge.style.boxShadow = 'none';
+            });
+        });
     </script>
 </body>
 </html> 
