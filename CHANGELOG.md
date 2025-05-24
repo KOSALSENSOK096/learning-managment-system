@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 
 
+
+## [x.x.x] - 2025-05-24
+
+### ✨ What's New
+Your release notes
 ## [1.1.0] - 2025-05-24
 
 ### ✨ What's New
