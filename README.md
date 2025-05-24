@@ -9,10 +9,10 @@
 
 <br/>
 
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)](https://vuejs.org)
+[![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
@@ -27,9 +27,14 @@
 
 <br/>
 
+[![GitHub Stars](https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&logo=github)](https://github.com/KOSALSENSOK096/learning-managment-system/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system?style=for-the-badge&logo=github)](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/KOSALSENSOK096/learning-managment-system?style=for-the-badge&logo=github)](https://github.com/KOSALSENSOK096/learning-managment-system/pulls)
+[![License](https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](LICENSE)
+
 <h3>🚀 Modern Learning Management System for Educational Excellence 📚</h3>
 
-[Live Demo](https://your-demo-link.com) · [Report Bug](https://github.com/KOSALSENSOK096/learning-managment-system/issues) · [Request Feature](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
+[View Demo](https://your-demo-link.com) · [Report Bug](https://github.com/KOSALSENSOK096/learning-managment-system/issues) · [Request Feature](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
 
 </div>
 
@@ -125,19 +130,16 @@ A cutting-edge Learning Management System built with Laravel & Vue.js, designed 
 git clone https://github.com/KOSALSENSOK096/learning-managment-system.git
 
 # Install dependencies
-composer install
-npm install
+composer install && npm install
 
-# Environment setup
-cp .env.example .env
-php artisan key:generate
+# Setup environment
+cp .env.example .env && php artisan key:generate
 
-# Database setup
+# Run migrations
 php artisan migrate --seed
 
-# Start development server
-php artisan serve
-npm run dev
+# Start servers
+php artisan serve & npm run dev
 ```
 
 ## 📸 Screenshots
@@ -224,4 +226,124 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   Made with ❤️ by <a href="https://github.com/KOSALSENSOK096">KOSAL SENSOK</a>
+</div>
+
+## 👨‍💻 Connect with the Developer
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/KOSALSENSOK096">
+          <img src="https://github.com/KOSALSENSOK096.png" width="100px;" alt="KOSAL SENSOK"/>
+          <br />
+          <sub><b>KOSAL SENSOK</b></sub>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="mailto:kosalsensok065@gmail.com">
+          <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+        </a>
+        <a href="https://t.me/kosalsensok06">
+          <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
+        </a>
+        <a href="https://www.youtube.com/@SokCodeing">
+          <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## ✨ Features
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="25%">
+        <img src="https://img.icons8.com/color/48/000000/student-center.png" width="48" height="48"/>
+        <br />
+        <b>Student Portal</b>
+        <br />
+        Course access, assignments, & grades
+      </td>
+      <td align="center" width="25%">
+        <img src="https://img.icons8.com/color/48/000000/teacher.png" width="48" height="48"/>
+        <br />
+        <b>Teacher Dashboard</b>
+        <br />
+        Course management & grading
+      </td>
+      <td align="center" width="25%">
+        <img src="https://img.icons8.com/color/48/000000/test-partial-passed.png" width="48" height="48"/>
+        <br />
+        <b>Assessment Tools</b>
+        <br />
+        Quizzes & assignments
+      </td>
+      <td align="center" width="25%">
+        <img src="https://img.icons8.com/color/48/000000/dashboard-layout.png" width="48" height="48"/>
+        <br />
+        <b>Analytics</b>
+        <br />
+        Progress tracking & reports
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 📊 Project Status
+
+<div align="center">
+
+[![Build Status](https://img.shields.io/github/workflow/status/KOSALSENSOK096/learning-managment-system/Laravel?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/KOSALSENSOK096/learning-managment-system/actions)
+[![Code Quality](https://img.shields.io/codefactor/grade/github/KOSALSENSOK096/learning-managment-system/main?style=for-the-badge&logo=codefactor&logoColor=white)](https://github.com/KOSALSENSOK096/learning-managment-system)
+[![Last Commit](https://img.shields.io/github/last-commit/KOSALSENSOK096/learning-managment-system?style=for-the-badge&logo=git)](https://github.com/KOSALSENSOK096/learning-managment-system/commits/main)
+
+</div>
+
+## 📝 Documentation
+
+Detailed documentation is available in the [docs](docs/) directory:
+
+- [Installation Guide](docs/installation.md)
+- [User Guide](docs/user-guide.md)
+- [API Documentation](docs/api.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check our [Contributing Guidelines](CONTRIBUTING.md).
+
+<div align="center">
+  <img src="https://contrib.rocks/image?repo=KOSALSENSOK096/learning-managment-system" />
+</div>
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+### 💖 Support the Project
+
+[![GitHub Sponsor](https://img.shields.io/badge/Sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white)](https://github.com/sponsors/KOSALSENSOK096)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/your-username)
+
+### 📱 Stay Connected
+
+[![YouTube Channel](https://img.shields.io/badge/YouTube-@SokCodeing-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@SokCodeing)
+[![Telegram](https://img.shields.io/badge/Telegram-@kosalsensok06-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/kosalsensok06)
+[![Email](https://img.shields.io/badge/Email-kosalsensok065@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kosalsensok065@gmail.com)
+
+<br />
+
+Made with ❤️ by [KOSAL SENSOK](https://github.com/KOSALSENSOK096)
+
+⭐️ Star this project to show your support!
+
 </div>
