@@ -247,6 +247,134 @@
             justify-content: center;
             margin: 1rem 0;
         }
+
+        /* Enhanced animations and effects */
+        .floating-clock {
+            animation: clockFloat 6s ease-in-out infinite;
+            filter: drop-shadow(0 0 10px rgba(79, 70, 229, 0.5));
+        }
+
+        @keyframes clockFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-15px) rotate(90deg); }
+            50% { transform: translateY(0) rotate(180deg); }
+            75% { transform: translateY(15px) rotate(270deg); }
+        }
+
+        .glowing-border {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glowing-border::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, 
+                #4F46E5, #EC4899, #8B5CF6, #10B981, 
+                #F59E0B, #4F46E5, #EC4899, #8B5CF6);
+            background-size: 400%;
+            z-index: -1;
+            animation: glowingBorder 20s linear infinite;
+            filter: blur(10px);
+            opacity: 0.5;
+        }
+
+        @keyframes glowingBorder {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+
+        .tech-icon {
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tech-icon::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: currentColor;
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.1;
+            transform: scale(0);
+            transition: transform 0.3s ease;
+        }
+
+        .tech-icon:hover::after {
+            transform: scale(1.5);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #4F46E5, #818CF8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .loading-bar {
+            height: 4px;
+            width: 100%;
+            background: rgba(79, 70, 229, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            margin: 1rem 0;
+        }
+
+        .loading-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 30%;
+            background: linear-gradient(90deg, #4F46E5, #818CF8);
+            animation: loading 2s ease-in-out infinite;
+        }
+
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(400%); }
+        }
+
+        .pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
     </style>
 </head>
 <body class="flex items-center justify-center px-4">
@@ -286,30 +414,69 @@
     </div>
 
     <div class="error-container text-center">
-        <div class="mb-8">
+        <!-- Enhanced 404 Section -->
+        <div class="mb-8 glowing-border p-8 rounded-2xl">
             <h1 class="number-404 font-bold mb-4 neon-text">404</h1>
             <h2 class="text-4xl font-semibold text-gray-800 mb-4">Page Not Found</h2>
             <p class="text-xl text-gray-600 mb-8">The page you're looking for seems to have vanished in time...</p>
+            
+            <div class="loading-bar"></div>
         </div>
 
-        <!-- Tech Stack -->
+        <!-- Feature Grid -->
+        <div class="feature-grid">
+            <div class="feature-item">
+                <i class="fas fa-rocket feature-icon"></i>
+                <h3 class="font-semibold mb-2">Fast Loading</h3>
+                <p class="text-sm text-gray-600">Optimized performance</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt feature-icon"></i>
+                <h3 class="font-semibold mb-2">Secure</h3>
+                <p class="text-sm text-gray-600">Enterprise security</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-paint-brush feature-icon"></i>
+                <h3 class="font-semibold mb-2">Beautiful UI</h3>
+                <p class="text-sm text-gray-600">Modern design</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-mobile-alt feature-icon"></i>
+                <h3 class="font-semibold mb-2">Responsive</h3>
+                <p class="text-sm text-gray-600">Mobile-friendly</p>
+            </div>
+        </div>
+
+        <!-- Enhanced Tech Stack -->
         <div class="tech-stack">
-            <span class="tech-badge">
-                <i class="fab fa-laravel cool-icon"></i>
+            <span class="tech-badge glowing-border">
+                <i class="fab fa-laravel tech-icon"></i>
                 Laravel
             </span>
-            <span class="tech-badge">
-                <i class="fab fa-vuejs cool-icon"></i>
+            <span class="tech-badge glowing-border">
+                <i class="fab fa-vuejs tech-icon"></i>
                 Vue.js
             </span>
-            <span class="tech-badge">
-                <i class="fab fa-node-js cool-icon"></i>
+            <span class="tech-badge glowing-border">
+                <i class="fab fa-node-js tech-icon"></i>
                 Node.js
             </span>
-            <span class="tech-badge">
-                <i class="fas fa-database cool-icon"></i>
+            <span class="tech-badge glowing-border">
+                <i class="fas fa-database tech-icon"></i>
                 MySQL
             </span>
+        </div>
+
+        <!-- Enhanced Clock Section -->
+        <div class="floating-elements">
+            @foreach(['clock', 'clock-rotate-left', 'clock-rotate-right', 'hourglass', 'hourglass-half', 'calendar-alt'] as $icon)
+                <div class="floating-clock" 
+                     style="left: {{ rand(0, 100) }}%; 
+                            top: {{ rand(0, 100) }}%; 
+                            animation-delay: -{{ rand(0, 10) }}s;">
+                    <i class="fas fa-{{ $icon }} pulse"></i>
+                </div>
+            @endforeach
         </div>
 
         <div class="space-y-6">
@@ -356,32 +523,32 @@
             </div>
 
             <!-- Enhanced Support Section -->
-            <div class="mt-12 p-6 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl">
+            <div class="mt-12 p-6 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl glowing-border">
                 <h3 class="text-xl font-semibold text-gray-800 mb-4">Connect With Us</h3>
                 
                 <div class="social-icons justify-center">
-                    <a href="https://github.com/KOSALSENSOK096" class="social-icon" target="_blank">
-                        <i class="fab fa-github"></i>
+                    <a href="https://github.com/KOSALSENSOK096" class="social-icon glowing-border" target="_blank">
+                        <i class="fab fa-github tech-icon"></i>
                     </a>
-                    <a href="https://www.youtube.com/@SokCodeing" class="social-icon" target="_blank">
-                        <i class="fab fa-youtube"></i>
+                    <a href="https://www.youtube.com/@SokCodeing" class="social-icon glowing-border" target="_blank">
+                        <i class="fab fa-youtube tech-icon"></i>
                     </a>
-                    <a href="https://t.me/kosalsensok06" class="social-icon" target="_blank">
-                        <i class="fab fa-telegram"></i>
+                    <a href="https://t.me/kosalsensok06" class="social-icon glowing-border" target="_blank">
+                        <i class="fab fa-telegram tech-icon"></i>
                     </a>
-                    <a href="mailto:kosalsensok065@gmail.com" class="social-icon" target="_blank">
-                        <i class="fas fa-envelope"></i>
+                    <a href="mailto:kosalsensok065@gmail.com" class="social-icon glowing-border" target="_blank">
+                        <i class="fas fa-envelope tech-icon"></i>
                     </a>
                 </div>
 
                 <div class="flex justify-center items-center gap-6 mt-6">
                     <a href="https://www.buymeacoffee.com/kosalsensok" target="_blank" 
-                       class="btn bg-[#FFDD00] text-gray-900 px-6 py-2 rounded-lg flex items-center">
+                       class="btn bg-[#FFDD00] text-gray-900 px-6 py-2 rounded-lg flex items-center glowing-border">
                         <i class="fas fa-coffee mr-2"></i>
                         Buy me a coffee
                     </a>
                     <a href="https://t.me/kosalsensok06" target="_blank"
-                       class="btn bg-[#2AABEE] text-white px-6 py-2 rounded-lg flex items-center">
+                       class="btn bg-[#2AABEE] text-white px-6 py-2 rounded-lg flex items-center glowing-border">
                         <i class="fab fa-telegram mr-2"></i>
                         Join Community
                     </a>
@@ -458,6 +625,36 @@
             badge.addEventListener('mouseout', () => {
                 badge.style.borderColor = 'rgba(255, 255, 255, 0.2)';
                 badge.style.boxShadow = 'none';
+            });
+        });
+
+        // Enhanced animations for feature items
+        document.querySelectorAll('.feature-item').forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.2}s`;
+            item.addEventListener('mouseover', () => {
+                item.querySelector('.feature-icon').style.transform = 'scale(1.2) rotate(10deg)';
+            });
+            item.addEventListener('mouseout', () => {
+                item.querySelector('.feature-icon').style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+
+        // Add floating animation to tech icons
+        document.querySelectorAll('.tech-icon').forEach(icon => {
+            setInterval(() => {
+                const y = Math.random() * 10 - 5;
+                const rotate = Math.random() * 20 - 10;
+                icon.style.transform = `translateY(${y}px) rotate(${rotate}deg)`;
+            }, 2000);
+        });
+
+        // Add glowing effect to borders
+        document.querySelectorAll('.glowing-border').forEach(element => {
+            element.addEventListener('mouseover', () => {
+                element.style.filter = 'brightness(1.2)';
+            });
+            element.addEventListener('mouseout', () => {
+                element.style.filter = 'brightness(1)';
             });
         });
     </script>

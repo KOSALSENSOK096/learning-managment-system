@@ -2,6 +2,57 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0] - 2024-03-20
+
+### Added
+- Enhanced 404 error page with modern UI elements
+  - Floating clock animations with pulse effects
+  - Glowing border animations
+  - Feature grid with hover effects
+  - Loading bar animation
+  - Tech stack badges with hover effects
+  - Enhanced social media icons
+  - Particle system animations
+  - Modern gradient backgrounds
+  - Interactive elements with color transitions
+
+### Changed
+- Updated tech stack display with glowing effects
+- Improved social media integration
+- Enhanced visual feedback on interactive elements
+- Modernized overall UI design
+
+### Technical Improvements
+- Added advanced CSS animations
+- Implemented modern backdrop filters
+- Enhanced JavaScript animations
+- Improved responsive design
+- Added performance optimizations
+
+## [1.1.0] - 2024-03-19
+
+### Added
+- QR code payment system
+  - Multiple style options
+  - ACLEDA Bank KHQR integration
+  - Custom styling and animations
+  - Logo embedding support
+  - Enhanced error correction
+
+### Changed
+- Updated UI components
+- Improved documentation
+
+## [1.0.0] - 2024-03-18
+
+### Initial Release
+- Basic Learning Management System functionality
+- User authentication system
+- Course management
+- Student enrollment system
+- Basic UI components
+- Initial documentation
+
 
 
 

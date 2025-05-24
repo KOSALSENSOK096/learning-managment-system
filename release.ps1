@@ -2,7 +2,8 @@
 param (
     [Parameter(Mandatory=$true)]
     [string]$version,
-    [string]$message = "Release version $version"
+    [Parameter(Mandatory=$true)]
+    [string]$message
 )
 
 # Colors for output
@@ -19,36 +20,61 @@ function Write-ColorOutput($color, $message) {
 # Display header
 Write-ColorOutput $colors.Blue "🚀 Creating Release v$version..."
 
-# Update version file
-Write-ColorOutput $colors.Green "📝 Updating VERSION file..."
-$version | Out-File -FilePath "VERSION" -NoNewline
+# Function to update version file
+function Update-VersionFile {
+    param (
+        [string]$newVersion
+    )
+    $newVersion | Out-File -FilePath "VERSION" -NoNewline -Encoding utf8
+    Write-Host "Updated VERSION file to $newVersion"
+}
 
-# Update changelog
-Write-ColorOutput $colors.Green "📋 Updating CHANGELOG.md..."
-$date = Get-Date -Format "yyyy-MM-dd"
-$changelogEntry = @"
+# Function to update changelog
+function Update-Changelog {
+    param (
+        [string]$version,
+        [string]$message
+    )
+    $date = Get-Date -Format "yyyy-MM-dd"
+    $entry = @"
 
 ## [$version] - $date
 
-### ✨ What's New
+### Changes
 $message
 
 "@
-$changelog = Get-Content "CHANGELOG.md" -Raw
-$changelog = $changelog.Insert($changelog.IndexOf("## "), $changelogEntry)
-$changelog | Out-File "CHANGELOG.md" -NoNewline
+    $content = Get-Content "CHANGELOG.md" -Raw
+    $content = $content.Insert($content.IndexOf("`n"), $entry)
+    $content | Out-File -FilePath "CHANGELOG.md" -NoNewline -Encoding utf8
+    Write-Host "Updated CHANGELOG.md with new version $version"
+}
 
-# Git operations
-Write-ColorOutput $colors.Green "📦 Adding changes to Git..."
-git add VERSION CHANGELOG.md
+# Main release process
+try {
+    # Validate version format
+    if ($version -notmatch '^\d+\.\d+\.\d+$') {
+        throw "Invalid version format. Please use semantic versioning (e.g., 1.0.0)"
+    }
 
-Write-ColorOutput $colors.Green "💬 Committing changes..."
-git commit -m "🔖 Release version $version"
+    # Update version file
+    Update-VersionFile -newVersion $version
 
-Write-ColorOutput $colors.Green "🏷️ Creating Git tag..."
-git tag -a "v$version" -m "Version $version"
+    # Update changelog
+    Update-Changelog -version $version -message $message
 
-Write-ColorOutput $colors.Green "📤 Pushing to GitHub..."
-git push origin main --tags
+    # Git commands
+    git add VERSION CHANGELOG.md
+    git commit -m "Release version $version"
+    git tag -a "v$version" -m "$message"
+    
+    Write-Host "Successfully prepared release $version"
+    Write-Host "Next steps:"
+    Write-Host "1. Review the changes"
+    Write-Host "2. Push the changes: git push origin main --tags"
+} catch {
+    Write-Error "Error during release process: $_"
+    exit 1
+}
 
 Write-ColorOutput $colors.Blue "✅ Release v$version complete!" 
