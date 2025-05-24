@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 
 
+
+## [1.1.0] - 2025-05-24
+
+### ✨ What's New
+Enhanced UI with neon effects, tech badges, social icons, and improved animations
 ## [1.0.0] - 2025-05-24
 
 ### ✨ What's New
