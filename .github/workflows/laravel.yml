@@ -26,7 +26,7 @@ jobs:
         php-version: '8.0'
         extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, pdo_mysql, dom, filter, gd, iconv, json, mbstring, pdo
         
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
