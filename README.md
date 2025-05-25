@@ -1,36 +1,93 @@
 # 🎓 University Learning Management System
 
 <div align="center">
-  <img src="docs/images/banner.png" alt="University LMS Banner" width="800px">
+
+  <!-- Banner Image -->
+  <img src="https://user-images.githubusercontent.com/74038190/216122069-5b8169d7-1d8e-4a13-b245-a8e4176c99f8.png" alt="University LMS Banner" width="100%">
   
-  <h3>🚀 The Next Generation Learning Platform for Modern Education</h3>
+  <h1>🚀 University LMS</h1>
+  <h3>The Next Generation Learning Platform for Modern Education</h3>
 
-  [![Laravel](https://img.shields.io/badge/Laravel-8.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
-  [![Vue.js](https://img.shields.io/badge/Vue.js-2.6-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org)
-  [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-  [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
+  <!-- Technology Badges -->
+  <p>
+    <a href="https://laravel.com">
+      <img src="https://img.shields.io/badge/Laravel-8.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+    </a>
+    <a href="https://vuejs.org">
+      <img src="https://img.shields.io/badge/Vue.js-2.6-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js">
+    </a>
+    <a href="https://tailwindcss.com">
+      <img src="https://img.shields.io/badge/TailwindCSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS">
+    </a>
+    <a href="https://www.mysql.com">
+      <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+    </a>
+  </p>
 
-  [![GitHub license](https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/blob/main/LICENSE)
-  [![GitHub stars](https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/stargazers)
-  [![GitHub issues](https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
-  [![GitHub forks](https://img.shields.io/github/forks/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/network)
+  <!-- Project Status Badges -->
+  <p>
+    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system?style=for-the-badge&logo=github" alt="License">
+    </a>
+    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/stargazers">
+      <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&logo=github" alt="Stars">
+    </a>
+    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues">
+      <img src="https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system?style=for-the-badge&logo=github" alt="Issues">
+    </a>
+    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/network">
+      <img src="https://img.shields.io/github/forks/KOSALSENSOK096/learning-managment-system?style=for-the-badge&logo=github" alt="Forks">
+    </a>
+  </p>
 
-  [📚 Documentation](https://docs.university-lms.com) · [🎮 Live Demo](https://demo.university-lms.com) · [🐛 Report Bug](https://github.com/KOSALSENSOK096/learning-managment-system/issues) · [✨ Request Feature](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
+  <!-- Quick Links -->
+  <p>
+    <a href="https://docs.university-lms.com">
+      <img src="https://img.shields.io/badge/📚_Documentation-blue?style=for-the-badge" alt="Documentation">
+    </a>
+    <a href="https://demo.university-lms.com">
+      <img src="https://img.shields.io/badge/🎮_Live_Demo-success?style=for-the-badge" alt="Live Demo">
+    </a>
+    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues">
+      <img src="https://img.shields.io/badge/🐛_Report_Bug-red?style=for-the-badge" alt="Report Bug">
+    </a>
+    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues">
+      <img src="https://img.shields.io/badge/✨_Request_Feature-yellow?style=for-the-badge" alt="Request Feature">
+    </a>
+  </p>
 </div>
 
 ## 🌟 Overview
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" alt="Features Overview" width="100%">
+</div>
 
 Transform your educational institution with our cutting-edge Learning Management System. Built with modern technologies and designed for the future of education, University LMS provides a seamless, engaging, and efficient learning experience for students, teachers, and administrators.
 
 ### 🎯 Why Choose University LMS?
 
-- 🔥 **Modern Tech Stack** - Built with Laravel 8.x, Vue.js 2.6, and TailwindCSS 3.0
-- 🎨 **Beautiful UI/UX** - Intuitive interface with Material Design principles
-- 📱 **Fully Responsive** - Works perfectly on all devices
-- 🚀 **High Performance** - Optimized for speed and efficiency
-- 🔒 **Secure by Design** - Built with security best practices
-- 🔄 **Real-time Updates** - Live notifications and updates
-- 📊 **Advanced Analytics** - Detailed insights and reports
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122049-276bc7a5-c760-4849-805a-312f752b8195.png" width="100px" /><br />
+        <strong>Modern Tech Stack</strong><br />
+        Built with Laravel 8.x, Vue.js 2.6, and TailwindCSS 3.0
+      </td>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122065-2f875c47-4863-4bd5-85fb-8739b5ee6b4a.png" width="100px" /><br />
+        <strong>Beautiful UI/UX</strong><br />
+        Intuitive interface with Material Design
+      </td>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122039-c05b52fb-983f-4ee9-9723-b3b897a4535f.png" width="100px" /><br />
+        <strong>Fully Responsive</strong><br />
+        Works perfectly on all devices
+      </td>
+    </tr>
+  </table>
+</div>
 
 ### ✨ Key Features
 
@@ -159,13 +216,19 @@ University LMS is open-source software licensed under the [MIT License](LICENSE)
 ## 👨‍💻 Author
 
 <div align="center">
-  <img src="https://github.com/KOSALSENSOK096.png" alt="KOSAL SENSOK" width="100px" style="border-radius: 50%">
-  <br>
-  <strong>KOSAL SENSOK</strong>
-  <br>
-  <a href="https://github.com/KOSALSENSOK096">GitHub</a> •
-  <a href="https://twitter.com/KOSALSENSOK096">Twitter</a> •
-  <a href="https://linkedin.com/in/KOSALSENSOK096">LinkedIn</a>
+  <img src="https://github.com/KOSALSENSOK096.png" alt="KOSAL SENSOK" width="150px" style="border-radius: 50%; border: 3px solid #4CAF50">
+  <h3>KOSAL SENSOK</h3>
+  <p>
+    <a href="https://github.com/KOSALSENSOK096">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    </a>
+    <a href="https://twitter.com/KOSALSENSOK096">
+      <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+    </a>
+    <a href="https://linkedin.com/in/KOSALSENSOK096">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+  </p>
 </div>
 
 ## 🙏 Acknowledgments
@@ -178,14 +241,20 @@ University LMS is open-source software licensed under the [MIT License](LICENSE)
 ## 💫 Stargazers
 
 <div align="center">
-
-[![Stargazers repo roster for @KOSALSENSOK096/learning-managment-system](https://reporoster.com/stars/KOSALSENSOK096/learning-managment-system)](https://github.com/KOSALSENSOK096/learning-managment-system/stargazers)
-
+  <img src="https://reporoster.com/stars/KOSALSENSOK096/learning-managment-system" alt="Stargazers" width="100%">
+  
+  <br><br>
+  
+  <a href="https://star-history.com/#KOSALSENSOK096/learning-managment-system">
+    <img src="https://api.star-history.com/svg?repos=KOSALSENSOK096/learning-managment-system&type=Date" alt="Star History Chart" width="100%">
+  </a>
 </div>
 
 ---
 
 <div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/216122044-b1bed0a4-a8c6-4a2a-b3a2-d4b3c4b31006.png" width="100px">
+  <br>
   <strong>⭐️ Star us on GitHub — it motivates us a lot!</strong>
   <br><br>
   <a href="https://github.com/KOSALSENSOK096/learning-managment-system/stargazers">
