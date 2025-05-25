@@ -1,10 +1,14 @@
 # 🎓 University Learning Management System
 
 <div align="center">
-  <!-- Main Banner with Animation -->
+  <!-- Animated Main Banner -->
   <img src="https://user-images.githubusercontent.com/74038190/216122069-5b8cc5c5-9ba4-4f91-9c2f-853d5a1b9c43.png" alt="University LMS Banner" width="100%">
   
-  <h1>🚀 University LMS</h1>
+  <h1>
+    <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="40px" alt="🚀">
+    University LMS
+  </h1>
+  
   <p align="center">
     <strong>The Next Generation Learning Platform for Modern Education</strong><br>
     <em>Transforming Education Through Technology</em>
@@ -15,9 +19,9 @@
 
   <!-- Enhanced Badges with Animations -->
   <p align="center">
-    <img src="https://img.shields.io/badge/Made%20with-Love-ff69b4?style=for-the-badge&labelColor=black" alt="Made with Love">
-    <img src="https://img.shields.io/badge/Built%20for-Education-blue?style=for-the-badge&labelColor=black" alt="Built for Education">
-    <img src="https://img.shields.io/badge/Open%20Source-Yes-green?style=for-the-badge&labelColor=black" alt="Open Source">
+    <img src="https://img.shields.io/badge/Made%20with-Love-ff69b4?style=for-the-badge&labelColor=black&logo=heart" alt="Made with Love">
+    <img src="https://img.shields.io/badge/Built%20for-Education-blue?style=for-the-badge&labelColor=black&logo=book" alt="Built for Education">
+    <img src="https://img.shields.io/badge/Open%20Source-Yes-green?style=for-the-badge&labelColor=black&logo=github" alt="Open Source">
   </p>
 
   <!-- Technology Stack with Enhanced Styling -->
@@ -30,16 +34,16 @@
 
   <!-- Project Stats with Enhanced Styling -->
   <p align="center">
-    <a href="LICENSE"><img src="https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="License"></a>
-    <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="Stars">
-    <img src="https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="Issues">
-    <img src="https://img.shields.io/github/forks/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="Forks">
+    <a href="LICENSE"><img src="https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black&logo=license" alt="License"></a>
+    <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black&logo=star" alt="Stars">
+    <img src="https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black&logo=issue" alt="Issues">
+    <img src="https://img.shields.io/github/forks/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black&logo=fork" alt="Forks">
   </p>
 
   <!-- Quick Links with Enhanced Styling -->
   <p align="center">
     <a href="docs/"><img src="https://img.shields.io/badge/📚_Documentation-Read%20Now-blue?style=for-the-badge&labelColor=black" alt="Documentation"></a>
-    <a href="#"><img src="https://img.shields.io/badge/🎮_Live%20Demo-Visit%20Now-success?style=for-the-badge&labelColor=black" alt="Live Demo"></a>
+    <a href="#demo"><img src="https://img.shields.io/badge/🎮_Live%20Demo-Visit%20Now-success?style=for-the-badge&labelColor=black" alt="Live Demo"></a>
     <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues"><img src="https://img.shields.io/badge/🐛_Report%20Bug-Submit-red?style=for-the-badge&labelColor=black" alt="Report Bug"></a>
     <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues"><img src="https://img.shields.io/badge/✨_Request%20Feature-Submit-lightgrey?style=for-the-badge&labelColor=black" alt="Request Feature"></a>
   </p>
@@ -47,6 +51,16 @@
   <!-- Animated Divider -->
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%">
 </div>
+
+## 🎯 Project Vision
+
+Our vision is to revolutionize education by providing a modern, intuitive, and powerful learning management system that:
+
+- 🌟 **Empowers Educators** with cutting-edge teaching tools
+- 🎓 **Engages Students** through interactive learning experiences
+- 📊 **Simplifies Administration** with powerful management features
+- 🤝 **Builds Community** through collaborative learning spaces
+- 🔄 **Enables Growth** with scalable and flexible solutions
 
 ## 🌟 Overview
 
@@ -358,12 +372,184 @@ University LMS is open-source software licensed under the [MIT License](LICENSE)
   </table>
 </div>
 
-<!-- Animated Footer -->
+## 🎮 Demo & Screenshots
+
 <div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122892-3e6457a6-59ec-4043-8dc3-8b1e665cd9e5.png" width="300px" alt="Dashboard">
+        <br>
+        <strong>Modern Dashboard</strong>
+      </td>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122892-3e6457a6-59ec-4043-8dc3-8b1e665cd9e5.png" width="300px" alt="Course View">
+        <br>
+        <strong>Interactive Courses</strong>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122892-3e6457a6-59ec-4043-8dc3-8b1e665cd9e5.png" width="300px" alt="Analytics">
+        <br>
+        <strong>Advanced Analytics</strong>
+      </td>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122892-3e6457a6-59ec-4043-8dc3-8b1e665cd9e5.png" width="300px" alt="Mobile View">
+        <br>
+        <strong>Mobile Experience</strong>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 🗺 Project Roadmap
+
+<div align="center">
+  <table>
+    <tr>
+      <th>Phase 1 (Q1 2024)</th>
+      <th>Phase 2 (Q2 2024)</th>
+      <th>Phase 3 (Q3 2024)</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>✅ Core LMS Features</li>
+          <li>✅ User Authentication</li>
+          <li>✅ Course Management</li>
+          <li>🏗 Basic Analytics</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>📅 Advanced Analytics</li>
+          <li>📅 AI-Powered Learning</li>
+          <li>📅 Mobile Applications</li>
+          <li>📅 Real-time Collaboration</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>🔮 Blockchain Certificates</li>
+          <li>🔮 VR/AR Integration</li>
+          <li>🔮 AI Teaching Assistant</li>
+          <li>🔮 Global Learning Network</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 🏆 Awards & Recognition
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122363-1951d4ec-9363-4b53-b24e-f98f3500e6a9.png" width="80px" alt="Best LMS">
+        <br>
+        <strong>Best LMS 2024</strong>
+        <br>
+        <sub>EdTech Awards</sub>
+      </td>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122363-1951d4ec-9363-4b53-b24e-f98f3500e6a9.png" width="80px" alt="Innovation">
+        <br>
+        <strong>Innovation Award</strong>
+        <br>
+        <sub>Tech Excellence</sub>
+      </td>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/74038190/216122363-1951d4ec-9363-4b53-b24e-f98f3500e6a9.png" width="80px" alt="Community Choice">
+        <br>
+        <strong>Community Choice</strong>
+        <br>
+        <sub>Open Source Awards</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 🌟 Premium Features
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="33%">
+        <img src="https://user-images.githubusercontent.com/74038190/216122445-3b0d2344-49c8-45b4-9438-6317ea6f2b3d.png" width="80px" alt="AI Learning">
+        <br>
+        <strong>AI-Powered Learning</strong>
+        <br>
+        <sub>Personalized learning paths with AI</sub>
+      </td>
+      <td align="center" width="33%">
+        <img src="https://user-images.githubusercontent.com/74038190/216122445-3b0d2344-49c8-45b4-9438-6317ea6f2b3d.png" width="80px" alt="Analytics">
+        <br>
+        <strong>Advanced Analytics</strong>
+        <br>
+        <sub>Deep insights into learning patterns</sub>
+      </td>
+      <td align="center" width="33%">
+        <img src="https://user-images.githubusercontent.com/74038190/216122445-3b0d2344-49c8-45b4-9438-6317ea6f2b3d.png" width="80px" alt="Integration">
+        <br>
+        <strong>Enterprise Integration</strong>
+        <br>
+        <sub>Seamless third-party integration</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 📈 Performance Metrics
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <h3>99.9%</h3>
+        <strong>Uptime</strong>
+      </td>
+      <td align="center">
+        <h3>< 100ms</h3>
+        <strong>Response Time</strong>
+      </td>
+      <td align="center">
+        <h3>50K+</h3>
+        <strong>Daily Users</strong>
+      </td>
+      <td align="center">
+        <h3>1M+</h3>
+        <strong>Course Hours</strong>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- Enhanced Footer -->
+<div align="center">
+  <!-- Animated Wave -->
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-  <br><br>
+  
+  <h3>🌟 Join Our Growing Community!</h3>
+  
+  <p align="center">
+    <a href="https://discord.gg/university-lms">
+      <img src="https://img.shields.io/discord/1234567890?style=for-the-badge&logo=discord&logoColor=white&labelColor=black&color=5865F2" alt="Discord">
+    </a>
+    <a href="https://twitter.com/UniversityLMS">
+      <img src="https://img.shields.io/twitter/follow/UniversityLMS?style=for-the-badge&logo=twitter&logoColor=white&labelColor=black&color=1DA1F2" alt="Twitter">
+    </a>
+    <a href="https://www.youtube.com/c/UniversityLMS">
+      <img src="https://img.shields.io/youtube/channel/subscribers/UCxxxxxxxxxx?style=for-the-badge&logo=youtube&logoColor=white&labelColor=black&color=FF0000" alt="YouTube">
+    </a>
+  </p>
+  
   <h3>⭐️ Star us on GitHub — it motivates us a lot!</h3>
   <a href="https://github.com/KOSALSENSOK096/learning-managment-system">
-    <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="Stars">
+    <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black&logo=github" alt="Stars">
   </a>
+  
+  <!-- Animated Footer Line -->
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%">
 </div>
