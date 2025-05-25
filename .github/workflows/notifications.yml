@@ -1,0 +1,120 @@
+name: 📢 GitHub Updates Notification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    types: [opened, closed, reopened]
+  issues:
+    types: [opened, closed, reopened]
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  notify:
+    name: 🔔 Send Notifications
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: 📝 Format Update Message
+      id: format
+      run: |
+        if [ "${{ github.event_name }}" == "push" ]; then
+          echo "message=🔄 New Update on branch ${{ github.ref_name }} by @${{ github.actor }}" >> $GITHUB_OUTPUT
+          echo "color=#2ea44f" >> $GITHUB_OUTPUT
+          echo "type=Repository Update" >> $GITHUB_OUTPUT
+        elif [ "${{ github.event_name }}" == "pull_request" ]; then
+          echo "message=🎯 Pull Request ${{ github.event.action }} by @${{ github.actor }}" >> $GITHUB_OUTPUT
+          echo "color=#9c44e2" >> $GITHUB_OUTPUT
+          echo "type=Pull Request" >> $GITHUB_OUTPUT
+        elif [ "${{ github.event_name }}" == "issues" ]; then
+          echo "message=📌 Issue ${{ github.event.action }} by @${{ github.actor }}" >> $GITHUB_OUTPUT
+          echo "color=#e24444" >> $GITHUB_OUTPUT
+          echo "type=Issue Update" >> $GITHUB_OUTPUT
+        else
+          echo "message=📦 New Release published by @${{ github.actor }}" >> $GITHUB_OUTPUT
+          echo "color=#448be2" >> $GITHUB_OUTPUT
+          echo "type=New Release" >> $GITHUB_OUTPUT
+        fi
+
+    - name: 📧 Send Email Notification
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: "[${{ steps.format.outputs.type }}] University LMS Update"
+        html_body: |
+          <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f5f5f5;">
+            <h2 style="color: ${{ steps.format.outputs.color }}">${{ steps.format.outputs.message }}</h2>
+            <div style="background-color: white; padding: 15px; border-radius: 5px; margin: 20px 0;">
+              <h3>📝 Update Details:</h3>
+              <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 3px;">
+              ${{ github.event.head_commit.message || github.event.pull_request.title || github.event.issue.title || github.event.release.name }}
+              </pre>
+              <p>
+                <a href="${{ github.event.head_commit.url || github.event.pull_request.html_url || github.event.issue.html_url || github.event.release.html_url }}" 
+                   style="background-color: #0366d6; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                   View on GitHub
+                </a>
+              </p>
+            </div>
+            <p style="color: #666;">This is an automated notification from the University LMS GitHub Actions workflow.</p>
+          </div>
+        to: ${{ secrets.NOTIFICATION_EMAIL }}
+        from: University LMS Notifications
+
+    - name: 📱 Send to Slack
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_CHANNEL: github-updates
+        SLACK_COLOR: ${{ steps.format.outputs.color }}
+        SLACK_ICON: https://github.com/KOSALSENSOK096.png?size=48
+        SLACK_MESSAGE: |
+          ${{ steps.format.outputs.message }}
+          
+          📝 *Update Details:*
+          ```
+          ${{ github.event.head_commit.message || github.event.pull_request.title || github.event.issue.title || github.event.release.name }}
+          ```
+          
+          📊 *Repository Stats:*
+          • Branch: `${{ github.ref_name }}`
+          • Commit: `${{ github.sha }}`
+          • Updated: `${{ github.event.head_commit.timestamp || github.event.pull_request.updated_at || github.event.issue.updated_at }}`
+          
+          🔗 <${{ github.event.head_commit.url || github.event.pull_request.html_url || github.event.issue.html_url || github.event.release.html_url }}|View on GitHub>
+        SLACK_TITLE: 🚀 ${{ steps.format.outputs.type }}
+        SLACK_USERNAME: GitHub Notifications
+
+    - name: 💬 Send to Discord
+      uses: appleboy/discord-action@master
+      with:
+        webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
+        webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+        color: ${{ steps.format.outputs.color }}
+        username: "GitHub Notifications"
+        message: |
+          ### ${{ steps.format.outputs.message }}
+          
+          📝 **Update Details:**
+          ```
+          ${{ github.event.head_commit.message || github.event.pull_request.title || github.event.issue.title || github.event.release.name }}
+          ```
+          
+          📊 **Repository Stats:**
+          • Branch: `${{ github.ref_name }}`
+          • Commit: `${{ github.sha }}`
+          • Updated: `${{ github.event.head_commit.timestamp || github.event.pull_request.updated_at || github.event.issue.updated_at }}`
+          
+          🔗 [View on GitHub](${{ github.event.head_commit.url || github.event.pull_request.html_url || github.event.issue.html_url || github.event.release.html_url }})
+
+    - name: 🔔 Create Desktop Notification
+      if: runner.os == 'Windows'
+      run: |
+        powershell -Command "Add-Type -AssemblyName System.Windows.Forms; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(5000, 'GitHub Update', '${{ steps.format.outputs.message }}', [System.Windows.Forms.ToolTipIcon]::Info)" 
