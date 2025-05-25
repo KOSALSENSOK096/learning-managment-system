@@ -1,24 +1,56 @@
 # 🎓 University Learning Management System
 
 <div align="center">
-  <!-- Animated Main Banner with Gradient Border -->
-  <div style="border: 3px solid; border-image: linear-gradient(45deg, #FF6B6B, #4ECDC4) 1; padding: 10px; margin: 20px 0;">
-    <img src="https://user-images.githubusercontent.com/74038190/216122069-5b8cc5c5-9ba4-4f91-9c2f-853d5a1b9c43.png" alt="University LMS Banner" width="100%">
+  <!-- Modern Banner with Gradient Animation -->
+  <div style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); background-size: 400% 400%; animation: gradient 15s ease infinite; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+    <img src="https://user-images.githubusercontent.com/74038190/216122069-5b8cc5c5-9ba4-4f91-9c2f-853d5a1b9c43.png" alt="University LMS Banner" width="100%" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   </div>
-  
-  <!-- Enhanced Title with Animated Icon -->
-  <h1>
-    <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="40px" alt="🚀" class="animate-bounce">
-    <span style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-      University LMS
-    </span>
+
+  <!-- Enhanced Title with Modern Typography -->
+  <h1 style="font-family: 'Poppins', sans-serif; font-size: 3rem; background: linear-gradient(120deg, #2196F3, #FF4081); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 2rem 0;">
+    <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="40px" alt="🚀" style="margin-right: 1rem;">
+    University LMS
   </h1>
-  
-  <!-- Enhanced Tagline with Custom Styling -->
-  <p align="center" style="font-size: 1.2em; letter-spacing: 1px;">
-    <strong style="color: #FF6B6B;">The Next Generation Learning Platform</strong><br>
-    <em style="color: #4ECDC4;">Transforming Education Through Technology</em>
+
+  <!-- Modern Tagline with Custom Styling -->
+  <p style="font-family: 'Inter', sans-serif; font-size: 1.2rem; color: #666; max-width: 600px; margin: 1.5rem auto;">
+    <strong style="color: #2196F3;">Transform Your Educational Journey</strong><br>
+    <span style="font-style: italic; color: #757575;">Where Innovation Meets Education</span>
   </p>
+
+  <!-- Sleek Feature Cards -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+    <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+      <h3 style="color: #2196F3; margin: 0;">🎯 Smart Learning</h3>
+      <p style="color: #666; margin: 1rem 0 0;">AI-powered personalized learning paths</p>
+    </div>
+    <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+      <h3 style="color: #FF4081; margin: 0;">📊 Real-time Analytics</h3>
+      <p style="color: #666; margin: 1rem 0 0;">Track progress with advanced metrics</p>
+    </div>
+    <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+      <h3 style="color: #4CAF50; margin: 0;">🤝 Collaborative Learning</h3>
+      <p style="color: #666; margin: 1rem 0 0;">Connect and learn together</p>
+    </div>
+  </div>
+
+  <!-- Modern Stats Display -->
+  <div style="background: linear-gradient(135deg, #2196F3, #FF4081); padding: 2rem; border-radius: 15px; margin: 2rem 0; color: white;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+      <div>
+        <h3 style="font-size: 2.5rem; margin: 0;">100K+</h3>
+        <p style="margin: 0.5rem 0 0;">Active Students</p>
+      </div>
+      <div>
+        <h3 style="font-size: 2.5rem; margin: 0;">95%</h3>
+        <p style="margin: 0.5rem 0 0;">Satisfaction Rate</p>
+      </div>
+      <div>
+        <h3 style="font-size: 2.5rem; margin: 0;">24/7</h3>
+        <p style="margin: 0.5rem 0 0;">Support Available</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Animated Wave Separator with Enhanced Colors -->
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="filter: hue-rotate(45deg);">
@@ -30,13 +62,24 @@
     <img src="https://img.shields.io/badge/Open%20Source-Yes-green?style=for-the-badge&labelColor=black&logo=github" alt="Open Source">
   </div>
 
-  <!-- Technology Stack with Enhanced Styling -->
-  <p align="center">
-    <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white&labelColor=black" alt="Laravel">
-    <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D&labelColor=black" alt="Vue.js">
-    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=black" alt="TailwindCSS">
-    <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white&labelColor=black" alt="MySQL">
-  </p>
+  <!-- Technology Stack with Modern Cards -->
+  <div style="margin: 3rem 0;">
+    <h2 style="font-family: 'Poppins', sans-serif; text-align: center; color: #2196F3; margin-bottom: 2rem;">🚀 Technology Stack</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+      <div style="background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
+        <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white&labelColor=black" alt="Laravel">
+      </div>
+      <div style="background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
+        <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D&labelColor=black" alt="Vue.js">
+      </div>
+      <div style="background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
+        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=black" alt="TailwindCSS">
+      </div>
+      <div style="background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
+        <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white&labelColor=black" alt="MySQL">
+      </div>
+    </div>
+  </div>
 
   <!-- Project Stats with Enhanced Styling -->
   <p align="center">
@@ -60,18 +103,10 @@
   <!-- Enhanced Project Stats Cards -->
   <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 20px 0;">
     <div style="background: linear-gradient(135deg, #FF6B6B22, #4ECDC422); padding: 15px; border-radius: 10px;">
-      <h3>100K+</h3>
-      <p>Students Enrolled</p>
-    </div>
-    <div style="background: linear-gradient(135deg, #4ECDC422, #FF6B6B22); padding: 15px; border-radius: 10px;">
       <h3>5K+</h3>
       <p>Active Courses</p>
     </div>
     <div style="background: linear-gradient(135deg, #FF6B6B22, #4ECDC422); padding: 15px; border-radius: 10px;">
-      <h3>95%</h3>
-      <p>Satisfaction Rate</p>
-    </div>
-    <div style="background: linear-gradient(135deg, #4ECDC422, #FF6B6B22); padding: 15px; border-radius: 10px;">
       <h3>24/7</h3>
       <p>Support Available</p>
     </div>
@@ -176,51 +211,52 @@ Transform your educational institution with our cutting-edge Learning Management
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Quick Start Guide with Modern Styling
+<div style="margin: 3rem 0; background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <h2 style="font-family: 'Poppins', sans-serif; color: #2196F3; margin-bottom: 2rem; text-align: center;">🚀 Quick Start</h2>
+  
+  <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem;">
+    <h3 style="color: #FF4081; margin: 0 0 1rem;">📋 Prerequisites</h3>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li style="margin: 0.5rem 0; color: #666;">✅ PHP >= 8.0</li>
+      <li style="margin: 0.5rem 0; color: #666;">✅ MySQL >= 8.0</li>
+      <li style="margin: 0.5rem 0; color: #666;">✅ Node.js >= 14.x</li>
+      <li style="margin: 0.5rem 0; color: #666;">✅ Composer >= 2.0</li>
+    </ul>
+  </div>
 
-- PHP >= 8.0
-- MySQL >= 8.0
-- Node.js >= 14.x
-- Composer >= 2.0
-- Redis >= 6.0 (optional)
-- Elasticsearch >= 7.x (optional)
+  <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+    <h3 style="color: #4CAF50; margin: 0 0 1rem;">⚡ One-Click Installation</h3>
+    <div style="background: #2f3037; padding: 1rem; border-radius: 8px; overflow-x: auto;">
+      <code style="color: #fff; font-family: 'Fira Code', monospace;">curl -s https://install.university-lms.com | bash</code>
+    </div>
+  </div>
 
-### One-Click Installation
-
-```bash
-curl -s https://install.university-lms.com | bash
-```
-
-### Manual Installation
-
-1. Clone the repository
-```bash
+  <div style="margin-top: 2rem;">
+    <h3 style="color: #2196F3; margin: 0 0 1rem;">🔧 Manual Installation</h3>
+    <div style="background: #2f3037; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1rem;">
+      <code style="color: #fff; font-family: 'Fira Code', monospace;">
+# Clone the repository
 git clone https://github.com/KOSALSENSOK096/learning-managment-system.git
 cd learning-managment-system
-```
 
-2. Install dependencies
-```bash
+# Install dependencies
 composer install
 npm install
-```
 
-3. Configure environment
-```bash
+# Configure environment
 cp .env.example .env
 php artisan key:generate
-```
 
-4. Run migrations and seeders
-```bash
+# Run migrations and seeders
 php artisan migrate --seed
-```
 
-5. Build assets and start servers
-```bash
+# Build assets and start servers
 npm run build
-php artisan serve
-```
+php artisan serve</code>
+    </div>
+  </div>
+</div>
 
 ## 📚 Documentation
 
