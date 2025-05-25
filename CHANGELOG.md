@@ -1,152 +1,82 @@
-# Changelog
+# 📝 Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to the University LMS will be documented in this file.
 
-## [0.1.0] - 2024-03-20
-
-### Added
-- Initial project setup
-- Modern 404 error page with advanced features:
-  - Floating clock animations with pulse effects
-  - Glowing border animations with rainbow gradients
-  - Feature grid with hover effects and scale transitions
-  - Loading bar with smooth animations
-  - Tech stack badges with interactive hover effects
-  - Enhanced social media icons with glow effects
-  - Particle system with dynamic animations
-  - Modern gradient backgrounds with blur effects
-  - Interactive elements with color transitions
-  - Multiple clock styles with 3D rotations
-
-### Features
-- Beautiful UI components
-  - Neon text effects with shadow glow
-  - Floating elements with parallax effects
-  - Tech badges with hover animations
-  - Social icons with transition effects
-  - Modern gradient backgrounds
-  - Blur effects and glass morphism
-  - Responsive design for all devices
-
-### Technical Setup
-- Version management system
-- PowerShell scripts for updates and releases
-- Comprehensive documentation
-- GitHub integration
-- Development workflow setup
-
-### Documentation
-- Detailed README with badges
-- Installation instructions
-- Update procedures
-- Contributing guidelines
-- Version history tracking
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [2.0.0] - 2024-03-20
 
-### Added
-- Enhanced 404 error page with modern UI elements
-  - Floating clock animations with pulse effects
-  - Glowing border animations
-  - Feature grid with hover effects
-  - Loading bar animation
-  - Tech stack badges with hover effects
-  - Enhanced social media icons
-  - Particle system animations
-  - Modern gradient backgrounds
-  - Interactive elements with color transitions
+### ✨ Added
+- Complete UI/UX redesign with Material Design
+- Real-time notifications system
+- Advanced analytics dashboard
+- Multi-language support
+- Dark mode support
+- Two-factor authentication
+- Bulk course enrollment
+- Assignment plagiarism checker
 
-### Changed
-- Updated tech stack display with glowing effects
-- Improved social media integration
-- Enhanced visual feedback on interactive elements
-- Modernized overall UI design
+### 🔄 Changed
+- Upgraded to Laravel 8.x
+- Improved performance with Redis caching
+- Enhanced security measures
+- Restructured database schema
+- Optimized file storage system
 
-### Technical Improvements
-- Added advanced CSS animations
-- Implemented modern backdrop filters
-- Enhanced JavaScript animations
-- Improved responsive design
-- Added performance optimizations
+### 🐛 Fixed
+- Course access permission issues
+- File upload size limitations
+- Calendar sync problems
+- Search functionality improvements
+- Mobile responsiveness issues
 
-## [1.1.0] - 2024-03-19
+### 🔒 Security
+- Implemented rate limiting
+- Enhanced password policies
+- Added session management
+- Improved data encryption
 
-### Added
-- QR code payment system
-  - Multiple style options
-  - ACLEDA Bank KHQR integration
-  - Custom styling and animations
-  - Logo embedding support
-  - Enhanced error correction
-
-### Changed
-- Updated UI components
-- Improved documentation
-
-## [1.0.0] - 2024-03-18
-
-### Initial Release
-- Basic Learning Management System functionality
-- User authentication system
-- Course management
-- Student enrollment system
-- Basic UI components
-- Initial documentation
-
-## [x.x.x] - 2025-05-24
-
-### ✨ What's New
-Your release notes
-
-## [1.1.0] - 2025-05-24
-
-### ✨ What's New
-Enhanced UI with neon effects, tech badges, social icons, and improved animations
-
-## [1.0.0] - 2025-05-24
-
-### ✨ What's New
-Initial release with beautiful UI, animations, and QR code features
-
-## [1.0.0] - 2024-03-21
+## [1.9.0] - 2024-02-15
 
 ### ✨ Added
-- Beautiful 404 error page with animations and particle effects
-- Enhanced QR code generator with multiple style options
-- Comprehensive README with badges and project status
-- Cool icons and modern styling throughout
-- Version tracking and release management
+- Student progress tracking
+- Interactive course content
+- Assignment submission system
+- Automated grading system
+- Course discussion forums
 
-### 🎨 UI/UX Improvements
-- Floating clock animations with glow effects
-- Particle system with 3D rotations
-- Modern gradient backgrounds
-- Interactive hover effects
-- Responsive design elements
+### 🔄 Changed
+- Updated user interface
+- Improved mobile experience
+- Enhanced search functionality
+- Optimized database queries
 
-### 🔧 Technical Features
-- QR code generator with multiple styles (modern, classic, fancy)
-- Logo embedding support in QR codes
-- Enhanced error correction in QR codes
-- Automated GitHub update script
-- Version control system
+### 🐛 Fixed
+- Login issues on certain browsers
+- PDF generation errors
+- Email notification delays
+- Calendar event duplications
 
-### 📚 Documentation
-- Comprehensive installation guide
-- Detailed feature documentation
-- Contributing guidelines
-- Project status tracking
-- Version history
+## [1.8.0] - 2024-01-10
 
-### 🔐 Security
-- Secure payment integration
-- QR code validation
-- Error handling improvements
-- Security best practices
+### ✨ Added
+- Basic course management
+- User authentication
+- File upload system
+- Simple grading system
+- Course calendar
 
-### 🎯 Future Plans
-- Enhanced user authentication
-- More payment integrations
-- Additional UI themes
-- Performance optimizations
-- Mobile app integration 
+### 🔄 Changed
+- Initial release structure
+- Basic UI implementation
+- Core functionality setup
+
+### 🐛 Fixed
+- Initial deployment issues
+- Basic security concerns
+- Performance bottlenecks
+
+[2.0.0]: https://github.com/KOSALSENSOK096/learning-managment-system/compare/v1.9.0...v2.0.0
+[1.9.0]: https://github.com/KOSALSENSOK096/learning-managment-system/compare/v1.8.0...v1.9.0
+[1.8.0]: https://github.com/KOSALSENSOK096/learning-managment-system/releases/tag/v1.8.0 
