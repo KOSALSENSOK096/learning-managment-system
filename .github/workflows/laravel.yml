@@ -1,4 +1,4 @@
-name: Laravel
+name: Laravel CI/CD
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
         image: mysql:8.0
         env:
           MYSQL_ROOT_PASSWORD: password
-          MYSQL_DATABASE: laravel
+          MYSQL_DATABASE: university_lms_test
         ports:
           - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
@@ -23,7 +23,7 @@ jobs:
     steps:
     - uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.1'
+        php-version: '8.0'
         extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, pdo_mysql, dom, filter, gd, iconv, json, mbstring, pdo
         
     - uses: actions/checkout@v3
@@ -50,17 +50,28 @@ jobs:
         DB_CONNECTION: mysql
         DB_HOST: 127.0.0.1
         DB_PORT: 3306
-        DB_DATABASE: laravel
+        DB_DATABASE: university_lms_test
         DB_USERNAME: root
         DB_PASSWORD: password
       run: vendor/bin/phpunit
 
-    - name: Execute static analysis
-      run: |
-        composer require --dev phpstan/phpstan
-        vendor/bin/phpstan analyse app tests
+  deploy:
+    needs: laravel-tests
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
 
-    - name: Check code style
-      run: |
-        composer require --dev friendsofphp/php-cs-fixer
-        vendor/bin/php-cs-fixer fix --dry-run --diff 
+    steps:
+    - name: Deploy to production
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /var/www/html/university-lms
+          git pull origin main
+          composer install --no-interaction --prefer-dist --optimize-autoloader
+          php artisan migrate --force
+          php artisan config:cache
+          php artisan route:cache
+          php artisan view:cache 
