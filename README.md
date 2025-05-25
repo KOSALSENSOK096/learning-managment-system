@@ -1,28 +1,34 @@
 # 🎓 University Learning Management System
 
 <div align="center">
-  <!-- Animated Main Banner -->
-  <img src="https://user-images.githubusercontent.com/74038190/216122069-5b8cc5c5-9ba4-4f91-9c2f-853d5a1b9c43.png" alt="University LMS Banner" width="100%">
+  <!-- Animated Main Banner with Gradient Border -->
+  <div style="border: 3px solid; border-image: linear-gradient(45deg, #FF6B6B, #4ECDC4) 1; padding: 10px; margin: 20px 0;">
+    <img src="https://user-images.githubusercontent.com/74038190/216122069-5b8cc5c5-9ba4-4f91-9c2f-853d5a1b9c43.png" alt="University LMS Banner" width="100%">
+  </div>
   
+  <!-- Enhanced Title with Animated Icon -->
   <h1>
-    <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="40px" alt="🚀">
-    University LMS
+    <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="40px" alt="🚀" class="animate-bounce">
+    <span style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      University LMS
+    </span>
   </h1>
   
-  <p align="center">
-    <strong>The Next Generation Learning Platform for Modern Education</strong><br>
-    <em>Transforming Education Through Technology</em>
+  <!-- Enhanced Tagline with Custom Styling -->
+  <p align="center" style="font-size: 1.2em; letter-spacing: 1px;">
+    <strong style="color: #FF6B6B;">The Next Generation Learning Platform</strong><br>
+    <em style="color: #4ECDC4;">Transforming Education Through Technology</em>
   </p>
 
-  <!-- Animated Wave Separator -->
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+  <!-- Animated Wave Separator with Enhanced Colors -->
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="filter: hue-rotate(45deg);">
 
-  <!-- Enhanced Badges with Animations -->
-  <p align="center">
+  <!-- Enhanced Badges with Custom Styling -->
+  <div style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
     <img src="https://img.shields.io/badge/Made%20with-Love-ff69b4?style=for-the-badge&labelColor=black&logo=heart" alt="Made with Love">
     <img src="https://img.shields.io/badge/Built%20for-Education-blue?style=for-the-badge&labelColor=black&logo=book" alt="Built for Education">
     <img src="https://img.shields.io/badge/Open%20Source-Yes-green?style=for-the-badge&labelColor=black&logo=github" alt="Open Source">
-  </p>
+  </div>
 
   <!-- Technology Stack with Enhanced Styling -->
   <p align="center">
@@ -526,30 +532,23 @@ University LMS is open-source software licensed under the [MIT License](LICENSE)
   </table>
 </div>
 
-<!-- Enhanced Footer -->
-<div align="center">
-  <!-- Animated Wave -->
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-  
+<!-- Enhanced Footer with Gradient -->
+<div style="background: linear-gradient(135deg, #FF6B6B11, #4ECDC411); padding: 20px; border-radius: 10px; margin-top: 40px;">
   <h3>🌟 Join Our Growing Community!</h3>
-  
-  <p align="center">
-    <a href="https://discord.gg/university-lms">
-      <img src="https://img.shields.io/discord/1234567890?style=for-the-badge&logo=discord&logoColor=white&labelColor=black&color=5865F2" alt="Discord">
+  <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+    <a href="https://discord.gg/university-lms" style="text-decoration: none;">
+      <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
     </a>
-    <a href="https://twitter.com/UniversityLMS">
-      <img src="https://img.shields.io/twitter/follow/UniversityLMS?style=for-the-badge&logo=twitter&logoColor=white&labelColor=black&color=1DA1F2" alt="Twitter">
+    <a href="https://twitter.com/UniversityLMS" style="text-decoration: none;">
+      <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
     </a>
-    <a href="https://www.youtube.com/c/UniversityLMS">
-      <img src="https://img.shields.io/youtube/channel/subscribers/UCxxxxxxxxxx?style=for-the-badge&logo=youtube&logoColor=white&labelColor=black&color=FF0000" alt="YouTube">
+    <a href="https://www.youtube.com/c/UniversityLMS" style="text-decoration: none;">
+      <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
     </a>
-  </p>
-  
-  <h3>⭐️ Star us on GitHub — it motivates us a lot!</h3>
-  <a href="https://github.com/KOSALSENSOK096/learning-managment-system">
-    <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black&logo=github" alt="Stars">
-  </a>
-  
-  <!-- Animated Footer Line -->
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%">
+  </div>
+  <p style="margin-top: 20px;">⭐️ Star us on GitHub — it motivates us a lot!</p>
+</div>
+
+<!-- Animated Footer Line with Enhanced Colors -->
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" style="filter: hue-rotate(45deg);">
 </div>
