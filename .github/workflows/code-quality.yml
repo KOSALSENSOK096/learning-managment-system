@@ -11,7 +11,7 @@ jobs:
     name: 🛠️ Code Quality
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: 🐘 Setup PHP
         uses: shivammathur/setup-php@v2
@@ -39,7 +39,7 @@ jobs:
     name: 🔒 Security Check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: 🔍 Security Check
         uses: symfonycorp/security-checker-action@v4
@@ -53,7 +53,7 @@ jobs:
     name: ✨ Lint Code
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: 📝 Super-Linter
         uses: github/super-linter@v4
