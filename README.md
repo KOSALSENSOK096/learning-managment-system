@@ -1,21 +1,19 @@
 # 🎓 University Learning Management System
 
 <div align="center">
+  <img src="docs/images/banner.png" alt="University LMS Banner" width="800px">
 
-![University LMS Banner](https://user-images.githubusercontent.com/74038190/216122069-5b8169d7-1d8e-4a13-b245-a8e4176c99f8.png)
+  [![Laravel](https://img.shields.io/badge/Laravel-8.x-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com)
+  [![Vue.js](https://img.shields.io/badge/Vue.js-2.6-4FC08D?style=for-the-badge&logo=vue.js)](https://vuejs.org)
+  [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
+  [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql)](https://www.mysql.com)
 
-[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
-[![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)](https://vuejs.org)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-[![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
+  [![GitHub license](https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/blob/main/LICENSE)
+  [![GitHub stars](https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/stargazers)
+  [![GitHub issues](https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
+  [![GitHub forks](https://img.shields.io/github/forks/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/network)
 
-[![GitHub license](https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
-[![GitHub forks](https://img.shields.io/github/forks/KOSALSENSOK096/learning-managment-system?style=for-the-badge)](https://github.com/KOSALSENSOK096/learning-managment-system/network)
-
-[View Demo](https://demo.universitylms.com) · [Report Bug](https://github.com/KOSALSENSOK096/learning-managment-system/issues) · [Request Feature](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
-
+  [View Demo](https://demo.university-lms.com) · [Report Bug](https://github.com/KOSALSENSOK096/learning-managment-system/issues) · [Request Feature](https://github.com/KOSALSENSOK096/learning-managment-system/issues)
 </div>
 
 ## 🌟 Overview
@@ -36,8 +34,8 @@ A modern, feature-rich Learning Management System built for universities. Stream
 
 ### Prerequisites
 
-- PHP >= 7.4
-- MySQL >= 5.7
+- PHP >= 8.0
+- MySQL >= 8.0
 - Node.js & npm
 - Composer
 
@@ -74,8 +72,8 @@ npm run dev
 
 ## 📚 Documentation
 
-- [System Architecture](docs/ARCHITECTURE.md)
-- [API Documentation](docs/API.md)
+- [System Architecture](docs/architecture.md)
+- [API Documentation](docs/api.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 - [Security Policy](SECURITY.md)
@@ -121,7 +119,7 @@ Contributions are what make the open source community such an amazing place to l
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
 
 ## 👨‍💻 Author
 
@@ -129,15 +127,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🙏 Acknowledgments
 
-- [Laravel](https://laravel.com)
-- [Vue.js](https://vuejs.org)
-- [TailwindCSS](https://tailwindcss.com)
-- [Material Design](https://material.io)
+- Laravel
+- Vue.js
+- TailwindCSS
+- Material Design
 
 ---
 
-<div align="center">
-
 ⭐️ Star us on GitHub — it motivates us a lot!
-
-</div>
