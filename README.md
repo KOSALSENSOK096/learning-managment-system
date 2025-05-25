@@ -721,10 +721,10 @@ University LMS is open-source software licensed under the [MIT License](LICENSE)
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" style="filter: hue-rotate(45deg);">
 </div>
 
-<!-- Modern Form Section with Enhanced Styling -->
+<!-- Modern Form Section with Glass Morphism Effect -->
 <div style="margin: 4rem 0; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2)); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
   
-  <!-- Form Header -->
+  <!-- Form Header with Gradient -->
   <div style="background: linear-gradient(45deg, #2196F3, #FF4081); padding: 2rem; text-align: center;">
     <h2 style="color: white; font-family: 'Poppins', sans-serif; font-size: 2rem; margin: 0;">🎓 Student Registration</h2>
     <p style="color: rgba(255,255,255,0.9); margin: 1rem 0 0;">Join our learning community today</p>
@@ -733,14 +733,14 @@ University LMS is open-source software licensed under the [MIT License](LICENSE)
   <!-- Form Container -->
   <div style="padding: 2rem;">
     <!-- Personal Information Section -->
-    <div class="form-section" style="background: white; padding: 2rem; border-radius: 15px; margin-bottom: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="form-section" style="background: white; padding: 2rem; border-radius: 15px; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
       <h3 style="color: #2196F3; font-family: 'Poppins', sans-serif; margin: 0 0 1.5rem;">👤 Personal Information</h3>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-        <div class="form-group" style="margin-bottom: 1rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        <div class="form-group">
           <label style="display: block; color: #666; margin-bottom: 0.5rem; font-weight: 500;">Full Name</label>
           <input type="text" style="width: 100%; padding: 0.75rem; border: 2px solid #e1e1e1; border-radius: 8px; transition: all 0.3s ease; outline: none; font-size: 1rem;" placeholder="Enter your full name">
         </div>
-        <div class="form-group" style="margin-bottom: 1rem;">
+        <div class="form-group">
           <label style="display: block; color: #666; margin-bottom: 0.5rem; font-weight: 500;">Email Address</label>
           <input type="email" style="width: 100%; padding: 0.75rem; border: 2px solid #e1e1e1; border-radius: 8px; transition: all 0.3s ease; outline: none; font-size: 1rem;" placeholder="Enter your email">
         </div>
@@ -748,131 +748,124 @@ University LMS is open-source software licensed under the [MIT License](LICENSE)
     </div>
 
     <!-- Course Selection Section -->
-    <div class="form-section" style="background: white; padding: 2rem; border-radius: 15px; margin-bottom: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="form-section" style="background: white; padding: 2rem; border-radius: 15px; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
       <h3 style="color: #FF4081; font-family: 'Poppins', sans-serif; margin: 0 0 1.5rem;">📚 Course Selection</h3>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-        <div class="course-card" style="border: 2px solid #e1e1e1; border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
-          <h4 style="color: #2196F3; margin: 0 0 1rem;">Web Development</h4>
-          <p style="color: #666; margin: 0;">Learn modern web technologies</p>
+        <div class="course-card" style="border: 2px solid #e1e1e1; border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(45deg, #2196F3, #FF4081); opacity: 0; transition: opacity 0.3s ease; z-index: 0;"></div>
+          <div style="position: relative; z-index: 1;">
+            <h4 style="color: #2196F3; margin: 0 0 1rem;">Web Development</h4>
+            <p style="color: #666; margin: 0;">Learn modern web technologies</p>
+          </div>
+        </div>
+        <div class="course-card" style="border: 2px solid #e1e1e1; border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(45deg, #FF4081, #2196F3); opacity: 0; transition: opacity 0.3s ease; z-index: 0;"></div>
+          <div style="position: relative; z-index: 1;">
+            <h4 style="color: #FF4081; margin: 0 0 1rem;">Mobile Development</h4>
+            <p style="color: #666; margin: 0;">Master mobile app creation</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Additional Details Section -->
+    <div class="form-section" style="background: white; padding: 2rem; border-radius: 15px; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+      <h3 style="color: #4CAF50; font-family: 'Poppins', sans-serif; margin: 0 0 1.5rem;">📝 Additional Details</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        <div class="form-group">
+          <label style="display: block; color: #666; margin-bottom: 0.5rem; font-weight: 500;">Education Level</label>
+          <select style="width: 100%; padding: 0.75rem; border: 2px solid #e1e1e1; border-radius: 8px; transition: all 0.3s ease; outline: none; font-size: 1rem; background: white;">
+            <option value="">Select your education level</option>
+            <option value="high-school">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label style="display: block; color: #666; margin-bottom: 0.5rem; font-weight: 500;">Preferred Schedule</label>
+          <select style="width: 100%; padding: 0.75rem; border: 2px solid #e1e1e1; border-radius: 8px; transition: all 0.3s ease; outline: none; font-size: 1rem; background: white;">
+            <option value="">Select your preferred schedule</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button style="width: 100%; padding: 1rem; background: linear-gradient(45deg, #2196F3, #FF4081); border: none; border-radius: 8px; color: white; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden;">
+      <span style="position: relative; z-index: 1;">Submit Registration</span>
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(45deg, #FF4081, #2196F3); opacity: 0; transition: opacity 0.3s ease;"></div>
+    </button>
   </div>
 </div>
 
 <style>
-  /* Animations */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+/* Enhanced Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-  }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
 
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+/* Modern Hover Effects */
+.form-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
 
-  /* Apply Animations */
+.course-card:hover {
+  transform: translateY(-3px);
+  border-color: #2196F3;
+}
+
+.course-card:hover > div:first-child {
+  opacity: 0.05;
+}
+
+/* Input and Select Styling */
+input:focus, select:focus {
+  border-color: #2196F3;
+  box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.1);
+}
+
+/* Button Hover Effect */
+button:hover > div {
+  opacity: 1;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .form-section {
-    animation: fadeIn 0.6s ease-out;
+    padding: 1.5rem;
   }
-
-  .feature-card:hover {
-    animation: pulse 1s infinite;
+  
+  input, select, button {
+    font-size: 16px;
   }
+}
 
-  /* Enhanced Hover Effects */
-  .course-card {
-    position: relative;
-    overflow: hidden;
+@media (max-width: 480px) {
+  .form-section {
+    padding: 1.25rem;
   }
-
-  .course-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #2196F3, #FF4081);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
-    border-radius: 12px;
+  
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
+  
+  .form-group {
+    margin-bottom: 1rem;
   }
-
-  .course-card:hover::before {
-    opacity: 0.05;
-  }
-
-  /* Modern Input Styling */
-  input {
-    background: #f8f9fa;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-  }
-
-  input:focus {
-    background: white;
-    border-color: #2196F3;
-    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.1);
-  }
-
-  /* Button Animation */
-  button {
-    position: relative;
-    overflow: hidden;
-  }
-
-  button::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255,255,255,0.1);
-    transform: translate(-50%, -50%) rotate(35deg);
-    transition: transform 0.5s ease;
-  }
-
-  button:hover::after {
-    transform: translate(-50%, -50%) rotate(35deg) translateY(-100%);
-  }
-
-  /* Responsive Design Enhancements */
-  @media (max-width: 768px) {
-    .form-section {
-      margin: 1rem 0;
-    }
-
-    .feature-card {
-      margin: 1rem 0;
-    }
-
-    input, button {
-      font-size: 16px; /* Better mobile input handling */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .form-section {
-      padding: 1.25rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    h3 {
-      font-size: 1.25rem;
-    }
-  }
+}
 </style>
