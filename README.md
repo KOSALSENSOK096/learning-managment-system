@@ -1,44 +1,47 @@
 # 🎓 University Learning Management System
 
 <div align="center">
-  <!-- Main Banner -->
+  <!-- Main Banner with Animation -->
   <img src="https://user-images.githubusercontent.com/74038190/216122069-5b8cc5c5-9ba4-4f91-9c2f-853d5a1b9c43.png" alt="University LMS Banner" width="100%">
   
   <h1>🚀 University LMS</h1>
   <p align="center">
     <strong>The Next Generation Learning Platform for Modern Education</strong><br>
-    Transforming Education Through Technology
+    <em>Transforming Education Through Technology</em>
   </p>
 
-  <!-- Animated Badges -->
+  <!-- Animated Wave Separator -->
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+  <!-- Enhanced Badges with Animations -->
   <p align="center">
-    <img src="https://img.shields.io/badge/Made%20with-Love-ff69b4" alt="Made with Love">
-    <img src="https://img.shields.io/badge/Built%20for-Education-blue" alt="Built for Education">
-    <img src="https://img.shields.io/badge/Open%20Source-Yes-green" alt="Open Source">
+    <img src="https://img.shields.io/badge/Made%20with-Love-ff69b4?style=for-the-badge&labelColor=black" alt="Made with Love">
+    <img src="https://img.shields.io/badge/Built%20for-Education-blue?style=for-the-badge&labelColor=black" alt="Built for Education">
+    <img src="https://img.shields.io/badge/Open%20Source-Yes-green?style=for-the-badge&labelColor=black" alt="Open Source">
   </p>
 
-  <!-- Technology Stack -->
+  <!-- Technology Stack with Enhanced Styling -->
   <p align="center">
-    <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
-    <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="Vue.js">
-    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS">
-    <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+    <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white&labelColor=black" alt="Laravel">
+    <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D&labelColor=black" alt="Vue.js">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=black" alt="TailwindCSS">
+    <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white&labelColor=black" alt="MySQL">
   </p>
 
-  <!-- Project Stats with Custom Colors -->
+  <!-- Project Stats with Enhanced Styling -->
   <p align="center">
-    <a href="LICENSE"><img src="https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system" alt="License"></a>
-    <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system" alt="Stars">
-    <img src="https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system" alt="Issues">
-    <img src="https://img.shields.io/github/forks/KOSALSENSOK096/learning-managment-system" alt="Forks">
+    <a href="LICENSE"><img src="https://img.shields.io/github/license/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="License"></a>
+    <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="Stars">
+    <img src="https://img.shields.io/github/issues/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="Issues">
+    <img src="https://img.shields.io/github/forks/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="Forks">
   </p>
 
-  <!-- Quick Links with Custom Styling -->
+  <!-- Quick Links with Enhanced Styling -->
   <p align="center">
-    <a href="docs/"><img src="https://img.shields.io/badge/Documentation-Read%20Now-blue?style=for-the-badge" alt="Documentation"></a>
-    <a href="#"><img src="https://img.shields.io/badge/Live%20Demo-Visit%20Now-success?style=for-the-badge" alt="Live Demo"></a>
-    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues"><img src="https://img.shields.io/badge/Report%20Bug-Submit-red?style=for-the-badge" alt="Report Bug"></a>
-    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues"><img src="https://img.shields.io/badge/Request%20Feature-Submit-lightgrey?style=for-the-badge" alt="Request Feature"></a>
+    <a href="docs/"><img src="https://img.shields.io/badge/📚_Documentation-Read%20Now-blue?style=for-the-badge&labelColor=black" alt="Documentation"></a>
+    <a href="#"><img src="https://img.shields.io/badge/🎮_Live%20Demo-Visit%20Now-success?style=for-the-badge&labelColor=black" alt="Live Demo"></a>
+    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues"><img src="https://img.shields.io/badge/🐛_Report%20Bug-Submit-red?style=for-the-badge&labelColor=black" alt="Report Bug"></a>
+    <a href="https://github.com/KOSALSENSOK096/learning-managment-system/issues"><img src="https://img.shields.io/badge/✨_Request%20Feature-Submit-lightgrey?style=for-the-badge&labelColor=black" alt="Request Feature"></a>
   </p>
 
   <!-- Animated Divider -->
@@ -56,22 +59,22 @@ Transform your educational institution with our cutting-edge Learning Management
 <div align="center">
   <table>
     <tr>
-      <td align="center">
-        <img src="https://user-images.githubusercontent.com/74038190/216122049-276bc7a5-c760-4849-805a-312f752b8195.png" width="50" alt="Modern Tech">
+      <td align="center" width="33%">
+        <img src="https://user-images.githubusercontent.com/74038190/216122049-276bc7a5-c760-4849-805a-312f752b8195.png" width="80" alt="Modern Tech">
         <br>
         <strong>Modern Tech Stack</strong>
         <br>
         <sub>Built with Latest Technologies</sub>
       </td>
-      <td align="center">
-        <img src="https://user-images.githubusercontent.com/74038190/216122065-2f875c47-4863-4bd5-85fb-8739b5ee6b4a.png" width="50" alt="Beautiful UI/UX">
+      <td align="center" width="33%">
+        <img src="https://user-images.githubusercontent.com/74038190/216122065-2f875c47-4863-4bd5-85fb-8739b5ee6b4a.png" width="80" alt="Beautiful UI/UX">
         <br>
         <strong>Beautiful UI/UX</strong>
         <br>
         <sub>Intuitive & Modern Design</sub>
       </td>
-      <td align="center">
-        <img src="https://user-images.githubusercontent.com/74038190/216122039-c05b52fb-983f-4ee9-9723-b3b897a4535f.png" width="50" alt="Responsive">
+      <td align="center" width="33%">
+        <img src="https://user-images.githubusercontent.com/74038190/216122039-c05b52fb-983f-4ee9-9723-b3b897a4535f.png" width="80" alt="Responsive">
         <br>
         <strong>Fully Responsive</strong>
         <br>
@@ -223,13 +226,68 @@ Visit our [comprehensive documentation](https://docs.university-lms.com) for det
 - Security scanning
 - Automated backups
 
-## 📊 Project Stats
+## 📊 Project Stats & Analytics
 
 <div align="center">
-  <img src="https://img.shields.io/github/commit-activity/m/KOSALSENSOK096/learning-managment-system" alt="GitHub Activity">
-  <img src="https://img.shields.io/github/last-commit/KOSALSENSOK096/learning-managment-system" alt="GitHub Last Commit">
-  <img src="https://img.shields.io/github/languages/code-size/KOSALSENSOK096/learning-managment-system" alt="GitHub Code Size">
-  <img src="https://img.shields.io/github/languages/top/KOSALSENSOK096/learning-managment-system" alt="GitHub Top Language">
+  <!-- Enhanced Project Statistics -->
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/github/commit-activity/m/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="GitHub Activity">
+        <br>
+        <strong>Monthly Commits</strong>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/github/last-commit/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="GitHub Last Commit">
+        <br>
+        <strong>Latest Update</strong>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/github/languages/code-size/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="GitHub Code Size">
+        <br>
+        <strong>Code Size</strong>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/github/languages/top/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="GitHub Top Language">
+        <br>
+        <strong>Primary Language</strong>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 🌐 System Requirements
+
+<div align="center">
+  <table>
+    <tr>
+      <th>Component</th>
+      <th>Minimum</th>
+      <th>Recommended</th>
+    </tr>
+    <tr>
+      <td>CPU</td>
+      <td>2 cores</td>
+      <td>4+ cores</td>
+    </tr>
+    <tr>
+      <td>RAM</td>
+      <td>4GB</td>
+      <td>8GB+</td>
+    </tr>
+    <tr>
+      <td>Storage</td>
+      <td>20GB</td>
+      <td>50GB+</td>
+    </tr>
+    <tr>
+      <td>Network</td>
+      <td>10 Mbps</td>
+      <td>100+ Mbps</td>
+    </tr>
+  </table>
 </div>
 
 ## 🤝 Contributing
@@ -240,39 +298,72 @@ We love your input! We want to make contributing to University LMS as easy and t
 
 University LMS is open-source software licensed under the [MIT License](LICENSE).
 
-## 👨‍💻 Author
+## 👨‍💻 Author & Core Team
 
 <div align="center">
-  <img src="https://github.com/KOSALSENSOK096.png" alt="KOSAL SENSOK" width="150px" style="border-radius: 50%; border: 3px solid #4CAF50; box-shadow: 0 0 20px rgba(0,0,0,0.2);">
-  <h3>KOSAL SENSOK</h3>
-  <p>
-    <a href="https://github.com/KOSALSENSOK096"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-    <a href="https://twitter.com/KOSALSENSOK096"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
-    <a href="https://linkedin.com/in/KOSALSENSOK096"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  </p>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/KOSALSENSOK096.png" width="100px" alt="KOSAL SENSOK" style="border-radius: 50%; border: 3px solid #4CAF50;">
+        <br>
+        <strong>KOSAL SENSOK</strong>
+        <br>
+        <sub>Project Lead</sub>
+        <br>
+        <a href="https://github.com/KOSALSENSOK096"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=black" alt="GitHub"></a>
+      </td>
+      <td align="center">
+        <img src="https://github.com/KOSALSENSOK096.png" width="100px" alt="Team Member 1" style="border-radius: 50%; border: 3px solid #2196F3;">
+        <br>
+        <strong>Developer 1</strong>
+        <br>
+        <sub>Frontend Lead</sub>
+        <br>
+        <a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=black" alt="GitHub"></a>
+      </td>
+      <td align="center">
+        <img src="https://github.com/KOSALSENSOK096.png" width="100px" alt="Team Member 2" style="border-radius: 50%; border: 3px solid #FF5722;">
+        <br>
+        <strong>Developer 2</strong>
+        <br>
+        <sub>Backend Lead</sub>
+        <br>
+        <a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=black" alt="GitHub"></a>
+      </td>
+    </tr>
+  </table>
 </div>
 
-## 🙏 Acknowledgments
-
-- [Laravel](https://laravel.com) - The PHP Framework for Web Artisans
-- [Vue.js](https://vuejs.org) - The Progressive JavaScript Framework
-- [TailwindCSS](https://tailwindcss.com) - A utility-first CSS framework
-- [Material Design](https://material.io) - Google's open-source design system
-
-## 💫 Stargazers
+## 🌟 Support & Community
 
 <div align="center">
-  <img src="https://reporoster.com/stars/KOSALSENSOK096/learning-managment-system" alt="Stargazers">
-  
-  <img src="https://starchart.cc/KOSALSENSOK096/learning-managment-system.svg" alt="Star History Chart">
+  <table>
+    <tr>
+      <td align="center">
+        <h3>💬 Discord Community</h3>
+        <a href="#"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white&labelColor=black" alt="Discord"></a>
+        <p>Join our active community</p>
+      </td>
+      <td align="center">
+        <h3>📧 Email Support</h3>
+        <a href="mailto:support@university-lms.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=black" alt="Email"></a>
+        <p>Get help from our team</p>
+      </td>
+      <td align="center">
+        <h3>📚 Documentation</h3>
+        <a href="docs/"><img src="https://img.shields.io/badge/Docs-000000?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=black" alt="Docs"></a>
+        <p>Read our guides</p>
+      </td>
+    </tr>
+  </table>
 </div>
 
----
-
+<!-- Animated Footer -->
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
   <br><br>
-  <strong>⭐️ Star us on GitHub — it motivates us a lot!</strong>
-  <br><br>
-  <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=social" alt="Stars">
+  <h3>⭐️ Star us on GitHub — it motivates us a lot!</h3>
+  <a href="https://github.com/KOSALSENSOK096/learning-managment-system">
+    <img src="https://img.shields.io/github/stars/KOSALSENSOK096/learning-managment-system?style=for-the-badge&labelColor=black" alt="Stars">
+  </a>
 </div>
