@@ -45,7 +45,7 @@ jobs:
         uses: symfonycorp/security-checker-action@v4
 
       - name: 🔒 Dependency Review
-        uses: actions/dependency-review-action@v3
+        uses: actions/dependency-review-action@v4
         with:
           fail-on-severity: moderate
 
